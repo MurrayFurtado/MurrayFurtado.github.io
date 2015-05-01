@@ -1,0 +1,16 @@
+<div class="row"  ng-controller="GalleryCtrl as vm">
+<div class="col-md-5">
+  <img ng-src="{{vm.flyerFrontUrl}}" class="flyerImg" >
+  <img ng-src="{{vm.flyerBackUrl}}"  class="flyerImg" >
+</div>
+<div class="col-md-6">
+<div class="slider">
+  <img ng-repeat="slide in vm.slides" class="slide slide-animation nonDraggableImage"
+       ng-swipe-right="vm.nextSlide()" ng-swipe-left="vm.prevSlide()"
+       ng-hide="!vm.isCurrentSlideIndex($index)" ng-src="{{slide}}" style="background-color: black;">
+
+  <a class="arrow prev" href="" ng-click="vm.nextSlide()"></a>
+  <a class="arrow next" href="" ng-click="vm.prevSlide()"></a>
+</div>
+</div>
+</div>
