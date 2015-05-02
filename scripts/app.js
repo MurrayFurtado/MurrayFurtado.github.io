@@ -12,6 +12,7 @@
 angular
   .module('appApp', [
     'ngAnimate',
+    'ngCart',
     'ngCookies',
     'ngResource',
     'ngRoute',
@@ -34,6 +35,7 @@ angular
         templateUrl: 'views/djmixes.html'
       }).when('/tickets', {
         templateUrl: 'views/tickets.html'
+
         //.otherwise({
         //  redirectTo: '/'
         //});

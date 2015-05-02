@@ -36,8 +36,8 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav ">
           <li ng-click="vm.showFlyer()"><a ng-href="#/" >Home</a></li>
-          <li ng-click="vm.hideFlyer()"><a ng-href="#about" >About</a></li>
-          <li>
+          <!--<li ng-click="vm.hideFlyer()"><a ng-href="#about" >About</a></li>-->
+          <!--<li>-->
           <li  ng-click="vm.hideFlyer()"><a ng-href="#lineup">Line Up</a></li>
           <li class="dropdown" >
             <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" ><span ng-bind="vm.selectedAction.name"></span><span class="caret"></span></a>
@@ -48,8 +48,12 @@
             </ul>
           </li>
           <li><a ng-href="#djmixes" ng-click="vm.hideFlyer()">DJ Mixes</a></li>
-          <li><a ng-href="#tickets" ng-click="vm.hideFlyer()" >Tickets</a></li>
+          <li><a href="http://www.astralcircus.net" target="_blank" ng-click="vm.hideFlyer()" >Tickets</a></li>
+
         </ul>
+        <!--<div class="pull-right ">-->
+          <!--<ngcart-summary></ngcart-summary>-->
+        <!--</div>-->
       </div>
     </div>
 </div>
@@ -82,6 +86,7 @@
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/gsap/src/uncompressed/TweenMax.js"></script>
+<script src="bower_components/ngcart/dist/ngCart.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -90,6 +95,8 @@
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/about.js"></script>
 <script src="scripts/controllers/gallery.js"></script>
+<script src="scripts/controllers/tickets.js"></script>
+
 
 <!-- endbuild -->
 </body>
